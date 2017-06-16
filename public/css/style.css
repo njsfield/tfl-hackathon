@@ -56,7 +56,7 @@ ul {
   font-size: 1rem;
   border-radius: 2rem;
   box-shadow: none;
-  background: transparent;
+  background: #F6A623;
   border: 0.2rem solid #fff;
   color: #fff;
 }
@@ -96,10 +96,11 @@ ul {
 }
 
 .item {
-  background: green;
+  background: #72BA1E;
   width: 80%;
   padding: 1rem;
   margin-bottom: 0.5rem;
+  color #000;
 }
 
 
