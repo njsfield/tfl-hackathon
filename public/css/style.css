@@ -99,8 +99,8 @@ ul {
   background: #72BA1E;
   width: 80%;
   padding: 1rem;
-  margin-bottom: 0.5rem;
-  color #000;
+  margin: 1rem auto;
+  /*color: #000;*/
 }
 
 
@@ -117,4 +117,11 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+/** Rain Drizzle **/
+
+.drizzle {
+    width: 50px;
 }
