@@ -9,6 +9,8 @@ fetch('/data/weather.json', { method: 'GET', })
   document.getElementById("fetch").addEventListener("click", () => {
     navigator.geolocation.getCurrentPosition((data) => {
       const endpoint = `get_bikes?longitude=${data.coords.longitude}&latitude=${data.coords.longitude}`
-      fetch(endpoint, { method: 'GET', }, load)
+      fetch(endpoint, { method: 'GET', })
+        .then(res => res.json())
+        .then(load)
     })
   })
