@@ -10,6 +10,7 @@ const data = [
 ]
 
 const load = (data, root) => {
+  document.getElementById("fetched").classList.remove("hidden")
   const rootElement = document.getElementById(root)
 
   data.forEach(point => {

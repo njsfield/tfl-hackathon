@@ -59,6 +59,6 @@ h1 {
   justify-content: space-between;
 }
 
-.fetched {
+.hidden {
   display: none;
 }
