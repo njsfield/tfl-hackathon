@@ -3,29 +3,36 @@
 <head>
   <meta charset="utf-8">
   <title>BIKE if you LIKE - TFL Ticketmaster hack</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <section class="initial">
-    <h1>Bike if you like</h1>
-    <div class="container_air">
-      <p>Air quality</p>
-      <p id="air">mock data</p>
-    </div>
-    <div class="container_rain">
-      <p>Rain</p>
-      <p id="rain">mock data</p>
-    </div>
-    <button id="fetch">Let's bike</button>
-  </section>
+  <div class="app">
+    <section class="initial">
+      <h1>Bike if you like</h1>
+      <div class="container_air">
+        <p>Air quality</p>
+        <p id="air">mock data</p>
+      </div>
+      <div class="container_rain">
+        <p>Rain</p>
+        <p id="rain">mock data</p>
+      </div>
+      <div class="bg-yellow verdict">
+        <p class="white">Verdict: good day to ride a bike!</p>
+        <button id="fetch" class="fetch-btn">Let's bike</button>
+      </div>
 
-</div>
-<div class="fetched">
-  <h2>Your nearest bike points</h2>
-  <p>Showing nearest bike points for your location</p>
-  <ul id="bike-points"></ul>
-</div>
+    </section>
 
+
+    <secion class="fetched">
+      <h2>Your nearest bike points</h2>
+      <p>Showing nearest bike points for your location</p>
+      <ul id="bike-points"></ul>
+    </section>
+
+  </div>
 <script src="js/app.js"></script>
 </body>
 </html>

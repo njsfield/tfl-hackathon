@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.app {
+  width: 100vw;
+  max-width: 600px;
+  align-self: center;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1 {
+  color: #F7CC1F;
+}
+
+.bg-yellow {
+  background: #F7CC1F;
+}
+
+.white {
+  color: #fff;
+}
+
+.fetch-btn {
+  padding: 1rem 4rem 1rem 4rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  box-shadow: none;
+}
+
+.verdict {
+  padding: 1rem;
+}
