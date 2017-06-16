@@ -8,21 +8,31 @@
 </head>
 <body>
   <div class="app">
-    <section class="initial">
-      <h1>Bike if you like</h1>
-      <div class="container_rain condition">
+    <!-- Main Container -->
+    <section class="container container-80">
+      <!-- Logo -->
+      <img  src="img/logo.png" class="logo" />
+      <div class="container-row">
         <p>Chance of rain</p>
+        <!-- Ghost -->
+        <span></span>
+        <!-- Rain -->
+        <img src="img/drizzle.png" class="drizzle" />
         <p id="rain">mock data</p>
       </div>
-      <div class="container_air condition">
+      <div class="container-row">
         <p>Air quality</p>
         <p id="pollution">mock data</p>
       </div>
+      <!-- Ghost -->
+      <span></span>
 
-      <div class="bg-yellow verdict">
-        <p class="white">Verdict: good day to ride a bike!</p>
-        <button id="fetch" class="cta-btn">Let's bike</button>
-      </div>
+
+    </section>
+    <!-- Footer -->
+    <section class="bg-yellow verdict container-20">
+      <p class="white">Verdict: good day to ride a bike!</p>
+      <button id="fetch" class="cta-btn">Let's bike</button>
     </section>
 
 
