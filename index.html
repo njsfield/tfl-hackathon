@@ -3,28 +3,46 @@
 <head>
   <meta charset="utf-8">
   <title>BIKE if you LIKE - TFL Ticketmaster hack</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <section class="initial">
-    <h1>Bike if you like</h1>
-    <div class="container_air">
-      <p>Air quality</p>
-      <p id="pollution">mock data</p>
-    </div>
-    <div class="container_rain">
-      <p>Rain</p>
-      <p id="rain">mock data</p>
-    </div>
-    <button id="fetch">Let's bike</button>
-  </section>
+  <div class="app">
+    <!-- Main Container -->
+    <section class="container container-80">
+      <!-- Logo -->
+      <img  src="img/logo.png" class="logo" />
+      <div class="container-row">
+        <p>Chance of rain</p>
+        <!-- Ghost -->
+        <span></span>
+        <!-- Rain -->
+        <img src="img/drizzle.png" class="drizzle" />
+        <p id="rain">mock data</p>
+      </div>
+      <div class="container-row">
+        <p>Air quality</p>
+        <p id="pollution">mock data</p>
+      </div>
+      <!-- Ghost -->
+      <span></span>
 
-</div>
-<section id="fetched">
-  <h2>Your nearest bike points</h2>
-  <p>Showing nearest bike points for your location</p>
-  <ul id="bike-points"></ul>
-</section>
+
+    </section>
+    <!-- Footer -->
+    <section class="bg-yellow verdict container-20">
+      <p class="white">Verdict: good day to ride a bike!</p>
+      <button id="fetch" class="cta-btn">Let's bike</button>
+    </section>
+
+
+    <secion id="fetched" class="bikes hidden white">
+      <h2 class="ml">Your nearest bike points</h2>
+      <p class="ml">Showing nearest bike points for your location</p>
+      <ul id="bike-points"></ul>
+    </section>
+
+  </div>
 <script src="js/weather.js"></script>
 <script src="js/app.js"></script>
 </body>

@@ -9,18 +9,24 @@ const data = [
   },
 ]
 
-const load = (data, root) => {
-  const rootElement = document.getElementById(root)
+const load = (data) => {
+  const fetched = document.getElementById("fetched");
+  fetched.classList.remove("hidden")
+  fetched.classList.add("visible")
+  fetched.scrollIntoView({ behavior: 'smooth' })
+
+  const rootElement = document.getElementById("bike-points")
 
   data.forEach(point => {
     const listItem = document.createElement('li')
+    listItem.classList.add("item")
     const container = document.createElement('div')
     listItem.appendChild(container)
     const location = document.createElement('p')
-    location.textContent = point.location
+    location.textContent = point.commonName
 
     const nbBikes = document.createElement('p')
-    nbBikes.textContent = point.bikes;
+    nbBikes.textContent = point.bikesAvailable + ' bikes available!';
 
     const button = document.createElement('button')
     button.textContent = "View map";
@@ -32,5 +38,3 @@ const load = (data, root) => {
     rootElement.appendChild(listItem)
   })
 }
-
-load(data, 'fetched')
