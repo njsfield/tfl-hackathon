@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
   display: flex;
@@ -44,7 +48,7 @@ ul {
 }
 
 .condition {
-  margin-left: 2rem;
+  /*margin-left: 2rem;*/
 }
 
 .cta-btn {
@@ -65,13 +69,16 @@ ul {
   text-align: center;
 }
 
-
-.initial {
-  height: 100vh;
+/* Main Container */
+.container {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+.container-20 {height: 20vh;}
+.container-80 {height: 80vh;}
 
 .hidden {
   display: none;
@@ -93,4 +100,20 @@ ul {
   width: 80%;
   padding: 1rem;
   margin-bottom: 0.5rem;
+}
+
+
+/** Logo **/
+
+.logo {
+    width: 200px;
+}
+
+
+/** Rows side by side **/
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
