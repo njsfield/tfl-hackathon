@@ -11,10 +11,13 @@ const data = [
 
 const load = (data, root) => {
   document.getElementById("fetched").classList.remove("hidden")
+  document.getElementById("fetched").classList.add("visible")
+
   const rootElement = document.getElementById(root)
 
   data.forEach(point => {
     const listItem = document.createElement('li')
+    listItem.classList.add("item")
     const container = document.createElement('div')
     listItem.appendChild(container)
     const location = document.createElement('p')
@@ -34,4 +37,4 @@ const load = (data, root) => {
   })
 }
 
-load(data, 'fetched')
+load(data, 'bike-points')

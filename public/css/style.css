@@ -21,6 +21,20 @@ h1 {
   margin-left: 2rem;
 }
 
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.ml {
+  margin-left: 2rem;
+}
+
 .bg-yellow {
   background: #F7CC1F;
 }
@@ -61,4 +75,22 @@ h1 {
 
 .hidden {
   display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+.bikes {
+  background: #7ED321;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item {
+  background: green;
+  width: 80%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
 }
