@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/njsfield/tfl-hackathon#readme",
   "dependencies": {
+    "handlebars": "^4.0.10",
     "hapi": "^16.4.3",
     "inert": "^4.2.0",
     "vision": "^4.1.1"
