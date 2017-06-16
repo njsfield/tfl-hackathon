@@ -1,0 +1,96 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.app {
+  width: 100vw;
+  max-width: 600px;
+  align-self: center;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1 {
+  color: #F7CC1F;
+  margin-left: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.ml {
+  margin-left: 2rem;
+}
+
+.bg-yellow {
+  background: #F7CC1F;
+}
+
+.white {
+  color: #fff;
+}
+
+.condition {
+  margin-left: 2rem;
+}
+
+.cta-btn {
+  padding: 1rem 4rem 1rem 4rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  box-shadow: none;
+  background: transparent;
+  border: 0.2rem solid #fff;
+  color: #fff;
+}
+
+.verdict {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.initial {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+.bikes {
+  background: #7ED321;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item {
+  background: green;
+  width: 80%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
