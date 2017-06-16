@@ -37,4 +37,4 @@ const load = (data, root) => {
   })
 }
 
-load(data, 'bike-points')
+// load(data, 'bike-points')
