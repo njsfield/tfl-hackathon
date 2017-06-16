@@ -26,7 +26,7 @@ const load = (data) => {
     location.textContent = point.commonName
 
     const nbBikes = document.createElement('p')
-    nbBikes.textContent = point.bikesAvailable;
+    nbBikes.textContent = point.bikesAvailable + ' bikes available!';
 
     const button = document.createElement('button')
     button.textContent = "View map";
