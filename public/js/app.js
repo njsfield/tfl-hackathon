@@ -1,14 +1,3 @@
-const data = [
-  {
-    location: "location1",
-    bikes: 5,
-  },
-  {
-    location: "location2",
-    bikes: 7,
-  },
-]
-
 const load = (data) => {
   const fetched = document.getElementById("fetched");
   fetched.classList.remove("hidden")

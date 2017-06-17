@@ -41,10 +41,9 @@ module.exports = {
     method: 'GET',
     path: '/get_bikes',
     handler: function (req, reply) {
-      const {longitude, latitude} = req.query;
+      const { longitude, latitude } = req.query;
       // called get_id function
-      // TODO add function
-      const bike_ids = ["BikePoints_1","BikePoints_2", "BikePoints_3"]
+      const bike_ids = require('./distance.js')(longitude, latitude)
       replyBikes(bike_ids, reply);
     }
   }
