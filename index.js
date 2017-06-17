@@ -14,13 +14,12 @@ const tls = {
 server.connection({address: '0.0.0.0', port: 8080, tls: tls });
 
 const routes = [
-    // is an object
-    require('./home'),
-    require('./get_bikes'),
+    require('./src/home'),
+    require('./src/get_bikes'),
     {
-    method: 'GET',
-    path: '/{path*}',
-    handler: {
+      method: 'GET',
+      path: '/{path*}',
+      handler: {
       directory: {
         path: './public'
       }

@@ -43,10 +43,7 @@ module.exports = {
     handler: function (req, reply) {
       const { longitude, latitude } = req.query;
       // called get_id function
-      console.log({ longitude, latitude });
       const bike_ids = require('./distance.js')(longitude, latitude)
-      console.log(bike_ids);
-      // const bike_ids = ["BikePoints_1","BikePoints_2", "BikePoints_3"]
       replyBikes(bike_ids, reply);
     }
   }

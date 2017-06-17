@@ -1,26 +1,25 @@
 // Haversine formula example (translated from python to JS)
 
 const fs = require('fs')
+const path = require('path')
 
-var allBikes = JSON.parse(fs.readFileSync('./TfL_bike_station_data.json'))
-
-// findBikesIds(51.5320521, -0.1092356);
+const allBikes = JSON.parse(fs.readFileSync(path.join(__dirname, './TfL_bike_station_data.json')))
 
 function findBikesIds(usrlon, usrlat){
-    bPoints = allBikes.objects;
+    const bPoints = allBikes.objects;
     var topIds = [];
-    usrLoc = [usrlon, usrlat];
     bPoints.forEach(function(bPoint){
         var entry = {}
-        entry[calcDistance(usrLoc, [bPoint.lat, bPoint.lon])] = bPoint.id;
+        entry[calcDistance([usrlon, usrlat], [bPoint.lat, bPoint.lon])] = bPoint.id;
         topIds.push(entry);
     });
     var sorted = topIds.slice(0).sort(function(a,b){
-        var keys = Object.keys(topIds);
         return Object.keys(a)-Object.keys(b);
     });
-    console.log(sorted.slice(0,3));
-   return sorted.slice(0,3).map(function(name){return name[Object.keys(name)[0]]});
+   return sorted.slice(0, 3)
+     .map(function(name){
+       return name[Object.keys(name)[0]]
+     });
 }
 
 // Converts from coords-degrees to radians.
