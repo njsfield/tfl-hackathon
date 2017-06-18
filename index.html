@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>BIKE if you LIKE - TFL Ticketmaster hack</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-  <div class="app">
-    <!-- Main Container -->
-    <section class="container container-80">
-      <!-- Logo -->
-      <img  src="img/logo.png" class="logo" />
-      <div class="container-row">
-        <p>Chance of rain</p>
-        <!-- Ghost -->
-        <span></span>
-        <!-- Rain -->
-        <img src="img/drizzle.png" class="drizzle" />
-        <p id="rain">mock data</p>
-      </div>
-      <div class="container-row">
-        <p>Air quality</p>
-        <div class="pols" id="pollution">
-          <span class="pols__dot pols__dot--one"></span>  
-          <span class="pols__dot pols__dot--two"></span>  
-          <span class="pols__dot pols__dot--three"></span>  
-        </div>
-      </div>
-      <!-- Ghost -->
-      <span></span>
+  <head>
+    <meta charset="utf-8">
+    <title>BIKE if you LIKE - TFL Ticketmaster hack</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="app">
+      <!-- Main Container -->
+      <section class="landing">
+
+        <!-- Dashboard -->
+        <section class="dash">
+          <!-- Logo -->
+          <img  src="img/logo.png" class="dash__logo" />
+
+          <!-- Stats -->
+          <div class="stats">
+            <p class="stats__title">Chance of rain</p>
+            <!-- Rain -->
+            <div class="stats__result">
+              <!-- Rain Logo -->
+              <img class="stats__rain-logo" src="img/drizzle.png"/>
+              <!-- Data (percent) -->
+              <p class"stats__rain-data" id="rain">loading</p>
+            </div>
+          </div>
+
+          <!-- Stats -->
+          <div class="stats">
+            <!-- Title -->
+            <p class="stats__title">Air quality</p>
+            <!-- Pol dots -->
+            <div class="pols" id="pollution">
+              <span class="pols__dot pols__dot--one"></span>  
+              <span class="pols__dot pols__dot--two"></span>  
+              <span class="pols__dot pols__dot--three"></span>  
+            </div>
+          </div>
+        </section> <!-- End Dash -->
+          
+        <!-- CTA -->
+        <section class="cta cta--yellow">
+          <!-- Title -->
+          <p class="cta__title">Verdict: good day to ride a bike!</p>
+          <!-- main button -->
+          <button class="cta__btn" id="fetch">Let's bike</button>
+        </section>
+
+      </section> <!-- End Landing -->
 
 
-    </section>
-    <!-- Footer -->
-    <section class="bg-yellow verdict container-20">
-      <p class="white">Verdict: good day to ride a bike!</p>
-      <button id="fetch" class="cta-btn">Let's bike</button>
-    </section>
+      <!-- Main output -->
+      <section id="fetched" class="bikes hidden white">
+        <h2 class="ml">Your nearest bike points</h2>
+        <p class="ml">Showing nearest bike points for your location</p>
+        <ul id="bike-points"></ul>
+      </section>
 
+    </div>
 
-    <secion id="fetched" class="bikes hidden white">
-      <h2 class="ml">Your nearest bike points</h2>
-      <p class="ml">Showing nearest bike points for your location</p>
-      <ul id="bike-points"></ul>
-    </section>
-
-  </div>
-<script src="js/weather.js"></script>
-<script src="js/app.js"></script>
-</body>
+    <script src="js/weather.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

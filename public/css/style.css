@@ -4,12 +4,63 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Sans serif;
+  font-family: sans-serif;
+  /** border: 1px solid blue; **/
 }
 
 html {
   font-size: 1em;
 }
+
+/** Landing **/
+
+.landing {
+  height: 100vh;
+}
+
+
+
+/* Dash */
+
+.dash {
+  height: 75%;
+  width: 100%;
+  padding: 2em;
+}
+
+.dash__logo {
+  width: 7em;
+}
+
+
+/* Stats */
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  margin: 10% 0;
+}
+
+.stats__title {
+  font-weight: 800;
+}
+
+.stats__result {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats__rain-logo {
+  width: 3em;
+  margin: 1em;
+}
+
+
 
 
 /** Pols **/
@@ -20,6 +71,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 0 1em 0 0;
 }
 
 .pols__dot {
@@ -27,7 +79,7 @@ html {
   height: 2em;
   border: 3px solid black;
   border-radius: 100%;
-  margin: 1em .1em;
+  margin: .1em;
 }
 
 /* Low (low) */
@@ -47,3 +99,56 @@ html {
 .pols.high .pols__dot--three {
   background-color: #7ED321;
 }
+
+
+
+/** CTA **/
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 25%;
+  padding: 2em;
+  position: relative;
+}
+
+.cta:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 8em;
+  position: absolute;
+  top: -4em;
+  left: 0;
+  border-radius: 70%;
+  background-color: inherit;
+  z-index: -1;
+}
+
+.cta--yellow {
+  background-color: #F7CC1F;
+}
+
+.cta__title {
+  margin: 0 0 1em 0;
+  color: white;
+}
+
+
+
+/** Button **/
+.cta__btn {
+  border-radius: 2em; 
+  font-size: 1.2em;
+  background: none;
+  border: 3px solid white;
+  color: white;
+  cursor: pointer;
+  padding: 1em;
+  line-height: 0;
+  width: 100%;
+}
+
+
