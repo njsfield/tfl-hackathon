@@ -1,127 +1,49 @@
+/** Reset **/
+
 * {
-    box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-}
-
-.app {
-  width: 100vw;
-  max-width: 600px;
-  align-self: center;
-}
-
-button {
-  font-family: inherit;
-}
-
-h1 {
-  color: #F7CC1F;
-  margin-left: 2rem;
-}
-
-li {
-  list-style: none;
-}
-
-ul {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  margin-bottom: 2rem;
+  font-family: Sans serif;
 }
 
-.ml {
-  margin-left: 2rem;
+html {
+  font-size: 1em;
 }
 
-.bg-yellow {
-  background: #F7CC1F;
-}
 
-.white {
-  color: #fff;
-}
+/** Pols **/
 
-.condition {
-  /*margin-left: 2rem;*/
-}
-
-.cta-btn {
-  padding: 1rem 4rem 1rem 4rem;
-  font-size: 1rem;
-  border-radius: 2rem;
-  box-shadow: none;
-  background: #F6A623;
-  border: 0.2rem solid #fff;
-  color: #fff;
-}
-
-.verdict {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-/* Main Container */
-.container {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
+.pols {
+  font-size: .7em;
+  display: inline-flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
-.container-20 {height: 20vh;}
-.container-80 {height: 80vh;}
-
-.hidden {
-  display: none;
+.pols__dot {
+  width: 2em;
+  height: 2em;
+  border: 3px solid black;
+  border-radius: 100%;
+  margin: 1em .1em;
 }
 
-.visible {
-  display: flex;
+/* Low (low) */
+.pols.low .pols__dot--one {
+  background-color: #F0586B;
 }
 
-.bikes {
-  background: #7ED321;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
+/* Mid (mid) */
+.pols.mid .pols__dot--one,
+.pols.mid .pols__dot--two {
+  background-color: #F7CC1F;
 }
 
-.item {
-  background: #72BA1E;
-  width: 80%;
-  padding: 1rem;
-  margin: 1rem auto;
-  /*color: #000;*/
-}
-
-
-/** Logo **/
-
-.logo {
-    width: 200px;
-}
-
-
-/** Rows side by side **/
-
-.container-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/** Rain Drizzle **/
-
-.drizzle {
-    width: 50px;
+/* High (high) */
+.pols.high .pols__dot--one,
+.pols.high .pols__dot--two,
+.pols.high .pols__dot--three {
+  background-color: #7ED321;
 }
