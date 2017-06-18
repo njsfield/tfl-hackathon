@@ -1,18 +1,27 @@
-/** Reset **/
+/** Base **/
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  /** border: 1px solid blue; **/
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
   font-size: 1em;
 }
 
-/** Landing **/
+/** Fix mobile width **/
+body {
+  max-width: 35em;
+  margin: 0 auto;
+}
+
+/*** Landing ***/
 
 .landing {
   height: 100vh;
@@ -141,6 +150,7 @@ html {
 /** Button **/
 .cta__btn {
   border-radius: 2em; 
+  outline: 0;
   font-size: 1.2em;
   background: none;
   border: 3px solid white;
@@ -152,3 +162,75 @@ html {
 }
 
 
+
+
+/*** Bikes Page ***/
+
+.bikes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  
+}
+
+.bikes--hidden {display: none;}
+
+.bikes--yellow {
+  background-color: #F7CC1F;
+}
+
+.bikes__title,
+.bikes__info {
+  margin: 1em;
+  color: white;
+  text-align: center;
+}
+
+.bikes__output {
+  list-style: none;
+  width: 100%;
+  padding: 1em;
+}
+
+/** Bike (Single) **/
+
+.bike {
+  background-color: rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  font-size: .9em;
+  padding: 1em;
+  margin: .5em 0;
+  min-height: 7em;
+  color: white;
+}
+
+/* Title */
+.bike__title {
+  margin: .5em;
+}
+
+/* Bike Info Container */
+.bike__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 15em;
+  font-size: .8em;
+}
+
+
+
+/* Bike Button */
+.bike__btn {
+  color: white;
+  cursor: pointer;
+  background: none;
+  padding: 1em;
+  outline: 0;
+  border: 1px solid white;
+}
